@@ -1,0 +1,322 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="for project">
+    <meta name="author" content="Erik Karenovich">
+    <title>Business card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/product/">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+
+    <style type="text/css">
+      .carousel-inner img{
+        width: 100%;
+        height: 350px;
+        }
+    </style>
+
+    <style>
+    .btn-circle {
+        width: 35px;
+        height: 35px;
+        border-radius: 19px;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 16px;
+    }
+    </style>
+
+</head>
+
+
+<header class="site-header sticky-top py-0">
+  <div style="background-color:{{ color_bg }};" class="d-flex flex-column flex-md-row align-items-center pb-1 mb-1">
+    <h3 style="color:{{ color_fg }}" class="my-2 mx-5 mr-md-auto font-weight-normal">Business card of our Project</h3>
+{% if color_bg == '#212529' %}
+
+  <nav class="d-inline-flex mt-3 mt-md-0 ms-md-auto">
+  <div class="my-3 mx-3 mr-md-auto font-weight-normal" >
+    <div class="dropdown">
+    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Contacts </button>
+    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+      <li><a class="dropdown-item" href="https://github.com/thekarenovich">GitHub</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="https://t.me/thekarenovich">Telegram</a></li>
+    </ul>
+  </div>
+  </div>
+
+
+
+  <div class="my-3 mx-1 mr-md-auto font-weight-normal">
+    <a class="me-4 py-2 btn btn-light btn-circle " href="/theme?color=light"></a>
+  </div>
+  </nav>
+
+
+{% else %}
+      <nav class="d-inline-flex mt-3 mt-md-0 ms-md-auto">
+  <div class="my-3 mx-3 mr-md-auto font-weight-normal" >
+  <div class="dropdown">
+    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"> Contacts </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2" >
+      <li><a class="dropdown-item" href="https://github.com/thekarenovich">GitHub</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="https://t.me/thekarenovich">Telegram</a></li>
+    </ul>
+  </div>
+  </div>
+
+  <div class="my-3 mx-1 mr-md-auto font-weight-normal">
+    <a class="me-4 py-2 btn btn-dark btn-circle" href="/theme?color=dark"></a>
+  </div>
+      </nav>
+
+
+
+
+{% endif %}
+  </div>
+</header>
+
+
+{% if color_bg == '#212529' %}
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="media/pics/22/11/13/ServQuick.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>First slide label</h1>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="media/pics/22/11/13/Royal.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Second slide label</h1>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="media/pics/22/11/13/Moonlit Asteroid.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Third slide label</h1>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% else %}
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="media/pics/22/11/13/Rainbow Blue.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>First slide label</h1>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="media/pics/22/11/13/Taran Tado.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Second slide label</h1>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="media/pics/22/11/13/EasyMed.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Third slide label</h1>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    {% endif %}
+
+
+    <style>
+      body {
+         background: {{ color_bg }};
+         color: #fff;
+     }
+   </style>
+  </header>
+
+<body>
+<main>
+
+<!--<div class="d-md-flex flex-md-equal w-100 ps-md-3">-->
+<!--    <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="color:{{ color_fg }}; background-color:{{ color_win }}; width: 100%; border-radius: 21px 21px 21px 21px;">-->
+
+<!--    <div class="col-md-5 p-lg-5 mx-auto my-2">-->
+<!--      <h1 class="display-4 fw-normal">Punny headline</h1>-->
+<!--      <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>-->
+<!--      <a class="btn btn-dark" href="#">Download</a>-->
+<!--    </div>-->
+
+<!--    <div class="product-device shadow-sm d-none d-md-block"></div>-->
+<!--    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<style>
+  .textcols {
+	white-space: nowrap;
+}
+.textcols-item {
+	white-space: normal;
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+.textcols .textcols-item:first-child {
+	margin-right: 4%;
+}
+</style>
+
+<div class="d-md-flex flex-md-equal w-100 ps-md-3">
+    <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="color:{{ color_fg }}; background-color:{{ color_bg }}; width: 100%; height: 560px; border-radius: 21px 21px 21px 21px;">
+      <div class="textcols">
+        <h1 align="left">Vibrant city photography that never sleeps</h1><br>
+        <div class="textcols-item" align="left" style="font-size: 20px;">
+          Welcome to the home of royalty-free, high-quality city photos. Here, you can browse and download a vast array of professionally shot city snaps. You’ll find pictures of groups socializing, busy construction workers, tourist attractions, skyscraper-filled skylines, and picturesque cityscapes. You’ll find images of the inner city, commercial office towers, bridges, residential roads, and even alleyways with graffiti. Moreover, our photographers have gone out of their way to capture cities during the four seasons of the year, capturing the beauty of the summer, winter, autumn, and spring in the city.
+          Whether you’re a student working on a project, a construction company, a property agency, or a travel blogger, our city images will meet your requirements.
+        </div>
+        <div class="textcols-item" align="left" style="font-size: 20px;">
+          Also, because our photography is license-free, you can use any image you like, in any way you like — even for commercial purposes. Better yet, there’s no need to attribute the photo to us, or the photographer. So, feel free to download any city picture that takes your fancy, and use it for an ad campaign, for your website, or even for a printed booklet.
+          We’re not just confident that you’ll find the right city photo for your project, we’re also pretty sure that you’ll find some images that you didn’t think you needed — until you saw them. These images will be regularly updated, too, so you’ll never be stuck for choice when it comes to images of cityscapes and skyscrapers.
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="color:{{ color_fg }}; background-color:{{ color_win }}; width: 50%; height: 300px; border-radius: 21px 21px 21px 21px;">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+<!--      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>-->
+    </div>
+    <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="color:{{ color_fg }}; background-color:{{ color_win }}; width: 50%; height: 300px; border-radius: 21px 21px 21px 21px;">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+<!--      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>-->
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="color:{{ color_fg }}; background-color:{{ color_win }}; width: 50%; height: 300px; border-radius: 21px 21px 21px 21px;">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+<!--      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>-->
+    </div>
+    <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="color:{{ color_fg }}; background-color:{{ color_win }}; width: 50%; height: 300px; border-radius: 21px 21px 21px 21px;">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+<!--      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>-->
+    </div>
+  </div>
+</main>
+
+<footer class="container py-2">
+  <div class="row">
+    <div class="col-12 col-md">
+      <small class="d-block mb-3 text-muted">&copy; 2022 MyPage, LLC</small>
+    </div>
+  </div>
+</footer>
+
+
+
+<!--<footer class="container py-5">-->
+<!--  <div class="row">-->
+<!--    <div class="col-12 col-md">-->
+<!--      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>-->
+<!--      <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>-->
+<!--    </div>-->
+<!--    <div class="col-6 col-md">-->
+<!--      <h5>Features</h5>-->
+<!--      <ul class="list-unstyled text-small">-->
+<!--        <li><a class="link-secondary" href="#">Cool stuff</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Random feature</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Team feature</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Stuff for developers</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Another one</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Last time</a></li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--    <div class="col-6 col-md">-->
+<!--      <h5>Resources</h5>-->
+<!--      <ul class="list-unstyled text-small">-->
+<!--        <li><a class="link-secondary" href="#">Resource name</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Resource</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Another resource</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Final resource</a></li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--    <div class="col-6 col-md">-->
+<!--      <h5>Resources</h5>-->
+<!--      <ul class="list-unstyled text-small">-->
+<!--        <li><a class="link-secondary" href="#">Business</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Education</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Government</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Gaming</a></li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--    <div class="col-6 col-md">-->
+<!--      <h5>About</h5>-->
+<!--      <ul class="list-unstyled text-small">-->
+<!--        <li><a class="link-secondary" href="#">Team</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Locations</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Privacy</a></li>-->
+<!--        <li><a class="link-secondary" href="#">Terms</a></li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</footer>-->
+
+</body>
+</html>
+
