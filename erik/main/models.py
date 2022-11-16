@@ -7,3 +7,11 @@ class Theme(models.Model):
 
     def __str__(self):
         return self.user
+
+
+class Translation(models.Model):
+    language = models.CharField(max_length=1000)
+    user = models.CharField(max_length=1000)
+
+    def __str__(self):
+        return self.user
