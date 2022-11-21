@@ -27,6 +27,16 @@
 
 ![color3](https://github.com/thekarenovich/business_card/blob/master/asserts/color3.png)    
 
+```
+Далее допустимо заронуть пару приятных дополнений к сайту: изменение темы и языка.
+```
+
 ![mono1](https://github.com/thekarenovich/business_card/blob/master/asserts/mono1.png)
+
+```
+Изменение языка нужно для того, чтобы число читающих возросло, поскольку нет надобности переводить вручную незнакомый текст, 
+а также можно привлечь иностранных коллег. Кстати, предполагается в перспективе добавить также немецкий и испанский языки. 
+```
+
 ![mono2](https://github.com/thekarenovich/business_card/blob/master/asserts/mono2.png)
 ![mono3](https://github.com/thekarenovich/business_card/blob/master/asserts/mono3.png)
