@@ -13,7 +13,9 @@
 
 ![color2](https://github.com/thekarenovich/business_card/blob/master/asserts/color2.png)    
 
-### Для узнаваемости разработчика была прикреплена небольшая фотография, рядом с которой уже более подробно описывается интересующая информация.
+```Для узнаваемости разработчика была прикреплена небольшая фотография, 
+рядом с которой уже более подробно описывается интересующая информация.
+```
 
 ![color1](https://github.com/thekarenovich/business_card/blob/master/asserts/color1.png)  
 
